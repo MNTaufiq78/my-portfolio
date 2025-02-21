@@ -5,25 +5,24 @@ export default function Contact() {
         <p className="text-gray-400 mt-4">You can reach me at:</p>
         <div className="mt-6 flex flex-col space-y-4">
         {/* Email */}
-        <a
+        <link
           href="mailto:gydmnt@gmail.com"
           className="flex items-center space-x-2 text-gray-400 hover:text-white"
         >
           📧 gydmnt@gmail.com
-        </a>
+        </link>
 
         {/* Phone */}
-        <a
+        <link
           href="tel:+919515413090"
           className="flex items-center space-x-2 text-gray-400 hover:text-white"
         >
           📞 +91 95154 13090
-        </a>
+        </link>
         <div className="mt-6 flex flex-col space-y-4">
         {/* GitHub Link */}
-        <a
+        <link
           href="https://github.com/MNTaufiq78"
-          target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-400 hover:text-white"
         >
@@ -44,15 +43,15 @@ export default function Contact() {
             />
           </svg>
           <span>GitHub</span>
-        </a>
+        </link>
         </div>
         {/* Resume Link */}
-        <a
+        <link
           href="https://drive.google.com/file/d/1NSvB4w5UTN-v_BzjA5VeX9thVSp919XM/view?usp=drive_link" 
           className="flex items-center space-x-2 text-gray-400 hover:text-white"
         >
           View My Resume
-        </a>
+        </link>
       </div>
       </div>
     );

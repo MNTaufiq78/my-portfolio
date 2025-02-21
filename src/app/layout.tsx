@@ -7,9 +7,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         
           <h1 className="text-2xl font-bold ">Mohammed Naseeruddin Taufiq</h1>
           <nav className="flex gap-6">
-            <a href="/" className="hover:scale-110">Home</a>
-            <a href="/projects" className="hover:scale-110">Projects</a>
-            <a href="/contact" className="hover:scale-110">Contact</a>
+            <link href="/" className="hover:scale-110">Home</link>
+            <link href="/projects" className="hover:scale-110">Projects</link>
+            <link href="/contact" className="hover:scale-110">Contact</link>
           </nav>
         </header>
         <main className="mt-20">{children}</main>
