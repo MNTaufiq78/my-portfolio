@@ -6,7 +6,6 @@ const projects = [
   { 
     name: "MovieHub", 
     desc: "MovieHub is a movie-watching platform that I led. It is built using HTML, Tailwind CSS, and JavaScript for the frontend. Firebase is used for user authentication, and Amazon S3 handles movie storage, ensuring a seamless streaming experience. Users can browse, search, and watch movies efficiently.",
-    
     },
   { 
     name: "FoodHunt", 
