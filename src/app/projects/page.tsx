@@ -6,7 +6,7 @@ const projects = [
   { 
     name: "MovieHub", 
     desc: "MovieHub is a movie-watching platform that I led. It is built using HTML, Tailwind CSS, and JavaScript for the frontend. Firebase is used for user authentication, and Amazon S3 handles movie storage, ensuring a seamless streaming experience. Users can browse, search, and watch movies efficiently.",
-    //imgSrc: "/moviehub.png", 
+    
     },
   { 
     name: "FoodHunt", 
@@ -19,7 +19,7 @@ const projects = [
   { 
     name: "Sketch2Colour", 
     desc: "Sketch2Colour is an AI-powered anime sketch colorization model. It uses Conditional Generative Adversarial Networks (C-GANs) to transform black-and-white anime line art into a fully colored anime image. The implementation follows techniques from research paper(s) on anime sketch colorization. The model is trained on an Anime Sketch Colorization Pair dataset and referenced a blog on Towards Data Science.",
-    imgSrc: "/public/images/image.png"
+    
     },
   { 
     name: "Instagram Clone", 
