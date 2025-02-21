@@ -26,51 +26,45 @@ const projects = [
     },
 ];
 
+
 export default function Projects() {
-  const [selected, setSelected] = useState<{ name: string; desc: string } | null>(null);
-
-  return (
-    <div className="flex flex-col items-center mt-10">
-      <h2 className="text-3xl font-bold">Projects</h2>
-      <div className="grid grid-cols-3 gap-8 p-10">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            className="w-32 h-32 bg-gray-900 flex items-center justify-center cursor-pointer border border-gray-700"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setSelected(project)}
-          >
-            {project.name}
-          </motion.div>
-        ))}
-      </div>
-
-      <AnimatePresence>
-        {selected && (
-          <motion.div
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 p-10"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
-          >
+    const [selected, setSelected] = useState<{ name: string; desc: string } | null>(null);
+  
+    return (
+      <div className="flex flex-col items-center mt-10">
+        <h2 className="text-3xl font-bold">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
+          {projects.map((project, index) => (
             <motion.div
-              className="bg-gray-800 p-10 rounded-lg text-center"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
+              key={index}
+              className="w-40 h-40 bg-gray-900 flex items-center justify-center cursor-pointer border border-gray-700"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setSelected(project)}
             >
-              <h3 className="text-2xl font-bold mb-4">{selected.name}</h3>
-              <p>{selected.desc}</p>
-              <button
-                className="mt-6 px-4 py-2 bg-red-600 rounded"
-                onClick={() => setSelected(null)}
-              >
-                Back
-              </button>
+              {project.name}
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
+          ))}
+        </div>
+  
+        <AnimatePresence>
+          {selected && (
+            <motion.div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 p-10"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0 }}
+            >
+              <div className="bg-gray-800 p-10 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-4">{selected.name}</h3>
+                <p>{selected.desc}</p>
+                <button className="mt-6 px-4 py-2 bg-red-600 rounded" onClick={() => setSelected(null)}>
+                  Back
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  }
