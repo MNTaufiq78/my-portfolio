@@ -8,7 +8,6 @@ export default function Contact() {
         <h2 className="text-3xl font-bold">Contact Me</h2>
         <p className="text-gray-400 mt-4">You can reach me at:</p>
         <div className="mt-6 flex flex-col space-y-4">
-
           {/* Email */}
           <Link href="mailto:gydmnt@gmail.com">
             <a className="text-gray-400 hover:text-white">📧 gydmnt@gmail.com</a>
