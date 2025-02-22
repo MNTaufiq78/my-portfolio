@@ -8,24 +8,24 @@ export default function Contact() {
       <div className="mt-6 flex flex-col space-y-4">
 
         {/* Email */}
-        <a href="mailto:gydmnt@gmail.com" className="text-gray-400 hover:text-white">
+        <link href="mailto:gydmnt@gmail.com" className="text-gray-400 hover:text-white">
           📧 gydmnt@gmail.com
-        </a>
+        </link>
 
         {/* Phone */}
-        <a href="tel:+919515413090" className="text-gray-400 hover:text-white">
+        <link href="tel:+919515413090" className="text-gray-400 hover:text-white">
           📞 +91 95154 13090
-        </a>
+        </link>
 
         {/* GitHub */}
-        <a href="https://github.com/MNTaufiq78" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+        <link href="https://github.com/MNTaufiq78" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
           GitHub
-        </a>
+        </link>
 
         {/* Resume */}
-        <a href="https://drive.google.com/file/d/1NSvB4w5UTN-v_BzjA5VeX9thVSp919XM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+        <link href="https://drive.google.com/file/d/1NSvB4w5UTN-v_BzjA5VeX9thVSp919XM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
           View My Resume
-        </a>
+        </link>
       </div>
     </div>
   );
