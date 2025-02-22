@@ -18,12 +18,12 @@ export default function Contact() {
         </link>
 
         {/* GitHub */}
-        <link href="https://github.com/MNTaufiq78" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+        <link href="https://github.com/MNTaufiq78" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
           GitHub
         </link>
 
         {/* Resume */}
-        <link href="https://drive.google.com/file/d/1NSvB4w5UTN-v_BzjA5VeX9thVSp919XM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+        <link href="https://drive.google.com/file/d/1NSvB4w5UTN-v_BzjA5VeX9thVSp919XM/view?usp=drive_link" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
           View My Resume
         </link>
       </div>
