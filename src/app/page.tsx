@@ -10,7 +10,7 @@ export default function Home() {
         <h3 className="text-2xl font-bold text-center">About Me</h3>
         <p className="text-gray-300 mt-4 text-justify">
           Hi, I am Mohammed Naseeruddin Taufiq, a passionate software developer with a strong foundation in full-stack web development and data analytics.
-          I have a <b>B.Tech in Computer Science & Engineering (Data Analytics)</b> from Presidency University, Bangalore (2020-2024), with a CGPA of <b>7.92</b>.
+          I have a <b>B.Tech in Computer Science and Engineering (Data Analytics)</b> from Presidency University, Bangalore (2020-2024), with a CGPA of <b>7.92</b>.
           I specialize in <b>React, Next.js, Node.js and Firebase</b>. I have led multiple projects, including <b>MovieHub, FOODHUNT, and Doctor AI</b>.
           I am currently looking for opportunities in software engineering and cybersecurity. Feel free to check out my work!
         </p>
