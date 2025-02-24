@@ -37,7 +37,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="w-40 h-40 bg-gray-900 flex items-center justify-center cursor-pointer border border-gray-700"
+              className="w-full sm:w-40 sm:h-40 bg-gray-900 flex items-center justify-center cursor-pointer border border-gray-700"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setSelected(project)}
@@ -50,12 +50,12 @@ export default function Projects() {
         <AnimatePresence>
           {selected && (
             <motion.div
-              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 p-10"
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 p-4 sm:p-10"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
             >
-              <div className="bg-gray-800 p-10 rounded-lg text-center">
+              <div className="bg-gray-800 p-4 sm:p-10 rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-4">{selected.name}</h3>
                 <p>{selected.desc}</p>
                 <button className="mt-6 px-4 py-2 bg-red-600 rounded" onClick={() => setSelected(null)}>
