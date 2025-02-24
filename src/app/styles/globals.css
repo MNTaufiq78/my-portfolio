@@ -7,3 +7,25 @@
     text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
     transition: all 0.3s ease-in-out;
   }
+
+  @keyframes neonGlow {
+    0% { box-shadow: 0 0 5px #0ff; }
+    50% { box-shadow: 0 0 15px #0ff; }
+    100% { box-shadow: 0 0 5px #0ff; }
+  }
+  
+  .neon-button {
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #0ff; /* Neon Cyan Border */
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    animation: neonGlow 1.5s infinite alternate;
+  }
+  
+  .neon-button:hover {
+    background-color: rgba(0, 255, 255, 0.2); /* Light Cyan Background */
+    transform: scale(1.1);
+  }
