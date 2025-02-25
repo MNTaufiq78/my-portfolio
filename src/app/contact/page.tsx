@@ -22,11 +22,6 @@ export default function Contact() {
           <Link href="https://github.com/MNTaufiq78" passHref>
             <span className="text-gray-400 hover:text-white">GitHub</span>
           </Link>
-
-          {/* Resume */}
-          <Link href="https://drive.google.com/file/d/1NSvB4w5UTN-v_BzjA5VeX9thVSp919XM/view?usp=drive_link" passHref>
-            <span className="text-gray-400 hover:text-white">View My Resume</span>
-          </Link>
         </div>
       </div>
     //</Layout>

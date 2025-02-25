@@ -2,7 +2,9 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center mt-10 text-white px-4">
       {/* Hero Section */}
-      <h2 className="text-3xl font-bold text-center">Welcome to My Portfolio</h2>
+      <h1 className="mt-6 text-3xl font-bold text-center">
+        Welcome to My Portfolio
+      </h1>
       <p className="text-gray-400 mt-4 text-center">Showcasing my projects and skills.</p>
 
       {/* About Me Section */}
@@ -37,6 +39,16 @@ export default function Home() {
           <p className="text-gray-400">2017 - 2018 | Motessori High School</p>
           <p className="text-gray-300 font-bold">CGPA: 8.8</p>
         </div>
+      </section>
+      <section className="mt-10 px-6 max-w-3xl text-justify pb-16 flex justify-center">
+        <a 
+          href="/Resume2.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="relative px-6 py-2 text-white font-bold text-lg rounded-md border border-cyan-400 bg-black transition duration-300 hover:bg-cyan-400 hover:text-black shadow-lg shadow-cyan-400/50"
+        >
+          View Resume
+        </a>
       </section>
     </div>
   );

@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               height={50}
               className="rounded-full"
             />
-            <h1 className="text-xl sm:text-2xl font-bold">Mohammed Naseeruddin Taufiq</h1>
+            <h1 className="text-xl sm:text-2xl font-bold">M.N.Taufiq</h1>
           </div>
 
           {/* Mobile Menu Button */}
