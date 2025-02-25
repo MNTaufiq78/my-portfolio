@@ -2,10 +2,17 @@
 import "../app/styles/globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+  
   return (
     <html lang="en">
       <body className="bg-black text-white">
